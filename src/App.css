@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+main{
+  padding-top: 8vh;
+  min-height: 92vh;
+}
+
 .navbar{
   width: 100%;
   height: 8vh;
@@ -89,6 +94,9 @@
 
 }
 
+
+
+
 .user-box input,.user-box textarea{
   width: 80%;
   padding: 10px;
@@ -99,18 +107,28 @@
   height: 100px;
 }
 
-.submit{
-  padding: 5px;
-}
 
 .submit a{
-  padding: 10px;
-  background-color: black;
-  border-radius: 10px;
-  text-align: center;
+ 
   text-decoration: none;
   color: whitesmoke;
 }
+
+.submit button{
+  margin: auto;
+  border-radius: 30px;
+   color: whitesmoke;
+   background-color: black;
+   text-align: center;
+   padding: 7px 15px;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 12px;
+   position: relative;
+   cursor: pointer;
+   align-items: center;
+}
+
 
 /* ################  Home page  ########## */
 
@@ -176,6 +194,8 @@
 
 /* ############ Project page ############## */
 
+
+
 .service-containet{
   box-shadow: 0 5px 10px #aaa;
   margin-top: 20px;
@@ -187,18 +207,16 @@
   font-weight: bold;
   text-align: center;
 } 
-.service-containet p {
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-}
-.service{
+
+
+.project-page{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 100px;
   text-align: center;
 }
+
 .service-list{
   width: 350px;
   border-radius: 10px;
@@ -212,13 +230,39 @@
   height: 200px;
 }
 
-.service-list h3{   
+
+
+
+
+
+
+
+
+/* ############   cards page ########## */
+
+
+
+
+.cards-list{
+  width: 350px;
+  border-radius: 10px;
+  padding: 20px;
+  height: 450px;
+  margin: 20px;
+  box-shadow: 0 5px 10px gray;  
+}
+
+.cards-list img{
+  height: 200px;
+}
+
+.cards-list h3{   
   padding: 10px 0px ;
 }
-.service-list p{
+.cards-list p{
   padding: 10px;
 }
-.service-list button{
+.cards-list button{
   margin: auto;
   border-radius: 30px;
    color: whitesmoke;
@@ -232,9 +276,25 @@
    cursor: pointer;
    align-items: center;
 }
-.service-list a button{
+.cards-list a button{
   text-align: center;
 }
+
+
+
+/* ############  New Page  ############## */
+
+
+.new{
+  padding-bottom: 10%;
+  padding-top: 100px;
+}
+
+
+
+
+
+
 
 
 
@@ -245,10 +305,32 @@
   height: 8vh;
   background-color: black;
   color: whitesmoke;
+  bottom: 0;
 }
 
 
 .footer p{
   text-align: center;
   padding-top: 3vh;
+}
+
+
+
+
+/* #############  New pahe  ############ */
+
+.new{
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 30px 500px;
+  
+}
+
+.new button{
+  padding: 6px 5px;
+  background-color: black;
+  border-radius: 9px;
+  color: whitesmoke;
+  margin: 10px;
 }

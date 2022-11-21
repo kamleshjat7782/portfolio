@@ -1,14 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Home from "./Home";
 
 function Contact() {
   return (
     <>
-    <Home 
-    page = ""
-    name ="Contact With Us"
-    />
+   
       <div className="contact">
         <h1>Contact Us </h1>
       </div>
@@ -27,6 +23,9 @@ function Contact() {
             <div className="user-box">
               <input type="text" name="" required placeholder="Name" />
             </div>
+
+            
+
             <div className="user-box">
               <input type="email" name="" id="" required placeholder="Email*" />
             </div>
@@ -38,9 +37,7 @@ function Contact() {
             </div>
 
             <div className="submit">
-              <Link to ="/" id="submit">
-                submit
-              </Link>
+              <button><Link to ="/" id="submit">Submit</Link></button>
             </div>
           </form>
         </div>

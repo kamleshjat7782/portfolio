@@ -1,55 +1,38 @@
 import React from "react";
 import img from "../Assets/Images/img.png";
-import Home from "./Home";
+import Cards from "./Cards";
+import Cdata from "./Cdata";
 
 function Project() {
   return (
     <>
-    <Home 
-    page = ""
-    name = "Projects"
-    />
-      <section>
+    
+      
         <div className="service-containet ">
           <h1>Projects </h1>
           
         </div>
-        <div className="service">
-          <div className="service-list">
-            <h3>Web Developmant </h3>
-            <img src={img} alt="img" />
-            <div>
-              <p>
-                Product development at any stage and ongoing support after you
-                launch.
-              </p>
-            </div>
-            <button>Read more</button>
-          </div>
-          <div className="service-list">
-            <h3>Kamlesh Choudhary </h3>
-            <img src={img} alt="img" />
-            <div>
-              <p>
-                Product development at any stage and ongoing support after you
-                launch.
-              </p>
-            </div>
-            <button>Read more</button>
-          </div>
-          <div className="service-list">
-            <h3>Web App Developmant </h3>
-            <img src={img} alt="img" />
-            <div>
-              <p>
-                Product development at any stage and ongoing support after you
-                launch.
-              </p>
-            </div>
-            <button>Read more</button>
-          </div>
-          </div>
-      </section>
+     
+
+            <div className="project-page">
+           {
+             Cdata.map((val, ind) =>{
+               return(
+                 <Cards
+                 project     = {val.project}
+                 img         = {val.img}
+                 discription = {val.discription}
+                 button       = {val.button}
+                 />
+                 )
+                })
+              }
+              </div>
+          
+          
+
+
+
     </>
   );
 }

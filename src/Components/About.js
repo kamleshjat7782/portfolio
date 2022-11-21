@@ -1,15 +1,10 @@
 import React from 'react'
 import about from '../Assets/Images/2.png'
-import Home from './Home';
 
 
 function About() {
   return (
     <>
-    <Home name = "About Us" 
-    page = ""
-    
-    />
     <div className="about">
       <div className="img">
       <img src={about} alt="img" />
