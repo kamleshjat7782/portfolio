@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from './Button';
+import { Link } from 'react-router-dom';
 
 function Cards(props) {
   
@@ -13,8 +13,7 @@ function Cards(props) {
         <img src={`${props.img}`} alt={props.img} />
         </div>
         <p> {props.discription}</p>
-        <button onClick={props.button}> Read More</button>
-        {/* <Button btnName = "handleBtn" /> */}
+        <button> <Link to = '/cardDetails'>  Read More </Link> </button>
         
       </div>
     

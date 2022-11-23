@@ -252,8 +252,22 @@ main{
   box-shadow: 0 5px 10px gray;  
 }
 
-.cards-list img{
-  height: 200px;
+.cards-list .img{
+  display: flex;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-list .img img{
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px ;
+
 }
 
 .cards-list h3{   
@@ -265,7 +279,6 @@ main{
 .cards-list button{
   margin: auto;
   border-radius: 30px;
-   color: whitesmoke;
    background-color: black;
    text-align: center;
    padding: 7px 9px;
@@ -276,8 +289,9 @@ main{
    cursor: pointer;
    align-items: center;
 }
-.cards-list a button{
-  text-align: center;
+.cards-list  a{
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 
@@ -333,4 +347,12 @@ main{
   border-radius: 9px;
   color: whitesmoke;
   margin: 10px;
+}
+
+
+/* #################  card-details   ################# */
+
+
+.card-details{
+  margin-top: 52px;
 }
