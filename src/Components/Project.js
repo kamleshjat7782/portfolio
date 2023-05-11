@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../Assets/Images/img.png";
 import Cards from "./Cards";
 import Cdata from "./Cdata";
 
